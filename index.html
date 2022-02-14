@@ -15,7 +15,31 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+    <style>
+    .scale {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transition: all 0.3s ease-in-out;   /* 부드러운 모션을 위해 추가*/
+}
+.scale:hover {
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+}
+.img {width:325px; height:280px; overflow:hidden }  
+    
+    </style>
+    
+    
     </head>
+    
+    
+    
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
@@ -29,7 +53,7 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">회고록</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+<!--                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li> -->
                     </ul>
                 </div>
             </div>
@@ -124,10 +148,24 @@
                         
                     <!-- Portfolio Item 4-->
                      <h4>4.핵심기능<hr></h4><Br>
+    <details>
+    <summary>사진 펼치기</summary>
+     <div align="center" class="scale"><img style="width:640px;height:360px" class="img-fluid" src="assets/img/portfolio/식단11.png" alt="..." /></div><Br><br><br>
+     <div align="center" class="scale"><img style="width:640px;height:360px" class="img-fluid" src="assets/img/portfolio/식단12.png" alt="..." /></div><Br><br><br>
+     <div align="center" class="scale"><img style="width:640px;height:360px" class="img-fluid" src="assets/img/portfolio/식단13.png" alt="..." /></div><Br><br><br>
+     <div align="center" class="scale"><img style="width:640px;height:360px" class="img-fluid" src="assets/img/portfolio/식단14.png" alt="..." /></div><Br><br><br>
+     <div align="center" class="scale"><img style="width:640px;height:360px" class="img-fluid" src="assets/img/portfolio/식단15.png" alt="..." /></div><Br><br><br>
+     <div align="center" class="scale"><img style="width:640px;height:360px" class="img-fluid" src="assets/img/portfolio/식단16.png" alt="..." /></div><Br><br><br>
+     <div align="center" class="scale"><img style="width:640px;height:360px" class="img-fluid" src="assets/img/portfolio/식단17.png" alt="..." /></div><Br><br><br>
+     <div align="center" class="scale"><img style="width:640px;height:360px" class="img-fluid" src="assets/img/portfolio/식단18.png" alt="..." /></div><Br><br><br>
+</details>
+                     
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
+     
+                            
                             <video width="400px" height="300px" src="assets/img/portfolio/식단서비스시연.mp4" controls ></video>
                               </div><br>
                            <p class="mb-4">	&#127821;저는 프로젝트에서 팀장,AWS,Springboot환경구축,PWA,식단관리서비스를 맡았습니다.<br>
@@ -168,18 +206,18 @@
                 </div>
                 <!-- About Section Content-->
                             <div align="center"><img style="width:960px;height:500px" class="img-fluid" src="assets/img/portfolio/회고록메인.png" alt="..." />
-                    </div></div><br>
-                    <div align="center" style="text-align:center">
-        <p class="mb-4"> &#127821;FineApple 프로젝트는 4주간 모델링과 4주간 구현으로 이루어진 프로젝트입니다.</p>
+                    </div></div><br><br>
+                   <div align="left">
+        <p style="margin-left:500px;font:15px;" class="mb-4"> &#127821;FineApple 프로젝트는 4주간 모델링과 4주간 구현으로 이루어진 프로젝트입니다.</p>
 
- <p class="mb-4">&#127821;조장으로써 제일 고민했던 일은 과연 조장이 가장 양이 많거나 가장 어려운 파트를 맡는게 맞는가였습니다.<br>
- 처음에는 그게 맞다고 생각하였으나 저희 팀에는 아직 미숙한 부분이 있는 팀원들이 있었고,<br>
- 그 팀원들을 도와주는것 또한 팀장이 해야할일이라고 생각하였습니다.<br>
- 하지만 난이도가 높거나 양이 많은 파트를 맞게 되면 다른 팀원들을 신경쓸 겨를이 없다고 생각하였고,<br>
- 저는 중간정도 난이도의 파트를 맡은 뒤, 조원들의 문제점을 같이 해결해나가는 역할을 하였습니다.<br>
- 그 결과 모든 팀원들이 자신이 생각한 목표의 90%는 달성할수 있었습니다.</p>
+ <p style="margin-left:500px" class="mb-4">&#127821;조장으로써 제일 고민했던 일은 과연 조장이 가장 양이 많거나 가장 어려운 파트를 맡는게 맞는가였습니다.<br>
+ &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp처음에는 그게 맞다고 생각하였으나 저희 팀에는 아직 미숙한 부분이 있는 팀원들이 있었고,<br>
+ &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp그 팀원들을 도와주는것 또한 팀장이 해야할일이라고 생각하였습니다.<br>
+ &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp하지만 난이도가 높거나 양이 많은 파트를 맞게 되면 다른 팀원들을 신경쓸 겨를이 없다고 생각하였고,<br>
+ &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp저는 중간정도 난이도의 파트를 맡은 뒤, 조원들의 문제점을 같이 해결해나가는 역할을 하였습니다.<br>
+ &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp그 결과 모든 팀원들이 자신이 생각한 목표의 90%는 달성할수 있었습니다.</p>
 
- <p class="mb-4">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#127821;현업에 가서 겪을 일들과 비교하면 미미한 프로젝트이지만,<br>
+ <p style="margin-left:500px" class="mb-4">&#127821;현업에 가서 겪을 일들과 비교하면 미미한 프로젝트이지만,<br>
 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 제 삶에서도 기억되고 앞으로 개발자가 되어서도 매우 기억에 남을 프로젝트였다고 생각합니다.</p>
             </div>
                 <!-- About Section Button-->
@@ -206,14 +244,7 @@
                         <a class="btn btn-outline-light btn-social mx-1" href="https://fineapple.or.kr"><i class="fab fa-fw fa-dribbble"></i></a>
                     </div>
                     <!-- Footer About Text-->
-                    <div class="col-lg-4">
-                        <h4 class="text-uppercase mb-4">About Freelancer</h4>
-                        <p class="lead mb-0">
-                            Freelance is a free to use, MIT licensed Bootstrap theme created by
-                            <a href="http://startbootstrap.com">Start Bootstrap</a>
-                            .
-                        </p>
-                    </div>
+               
                 </div>
             </div>
         </footer>
